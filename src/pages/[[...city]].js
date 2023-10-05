@@ -38,15 +38,16 @@ export default function Home({ weatherData }) {
             <h1>Weather App</h1>
             <WeatherCard 
                 cityName={weatherData.name}
+
                 
-                /*weatherType={weatherData.weather[0].main}
+                weatherType={weatherData.weather[0].main}
                 currentTemperature={weatherData.main.temp}
-                highTemperature={weatherData.main}
-                lowTemperature={weatherData.main}
-                cloudiness={}
-                humidity={}
-                windspeed={}
-*/
+                highTemperature={weatherData.main.temp_max}
+                lowTemperature={weatherData.main.temp_min}
+                //cloudiness={weatherData.main.}
+                //humidity={}
+                windSpeed={weatherData.wind.speed}
+
 
                 
 
