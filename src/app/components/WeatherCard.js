@@ -20,7 +20,7 @@ const WeatherCard = ({
         <p>Current Temperature: {currentTemperature} </p>
         <p>High Temperature: {highTemperature}</p>
         <p>Low Temperature: {lowTemperature}</p>
-        <p>Cloudiness: {cloudiness} </p>
+        <p>Cloudiness: {cloudiness} % </p>
         <p>Humidity: {humidity} </p>
         <p>Wind Speed: {windSpeed} mph</p>
 

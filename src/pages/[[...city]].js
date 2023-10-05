@@ -44,8 +44,8 @@ export default function Home({ weatherData }) {
                 currentTemperature={weatherData.main.temp}
                 highTemperature={weatherData.main.temp_max}
                 lowTemperature={weatherData.main.temp_min}
-                //cloudiness={weatherData.main.}
-                //humidity={}
+                cloudiness={weatherData.clouds.all}
+                humidity={weatherData.main.humidity}
                 windSpeed={weatherData.wind.speed}
 
 
