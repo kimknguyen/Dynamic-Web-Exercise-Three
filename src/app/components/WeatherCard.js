@@ -14,7 +14,10 @@ const WeatherCard = ({
 
 }) => (
 
-    <div className = {styles.WeatherCardWrapper}>
+    <div 
+        className = {styles.WeatherCardWrapper}
+        style={ { backgroundColor: `rgba(0,0,0,0.${cloudiness})`}}
+        >
         <div className= {styles.WeatherCardImage}> 
         <WeatherIcon weatherType={weatherType} />
         </div>
