@@ -1,7 +1,10 @@
 import Link from "next/link"; 
+import styles from "./WeatherCard.module.css"; 
+
 
 
 const Header = () => (
+    <div className = {styles.header}> 
     <header>
         <nav>
             <Link href="/Tokyo">Tokyo </Link>
@@ -12,8 +15,9 @@ const Header = () => (
         </nav>
     </header>
 
-
+    </div>
 
 ); 
+
 
 export default Header; 

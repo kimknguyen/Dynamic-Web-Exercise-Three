@@ -1,6 +1,7 @@
 import WeatherCard from "../app/components/WeatherCard"; 
 import Header from "../app/components/Header"; 
 import "../app/globals.css"; 
+import styles from "../app/components/WeatherCard.module.css"; 
 
 
 
@@ -35,7 +36,9 @@ export default function Home({ weatherData }) {
         <>
         <Header /> 
         <main>
+            <div className = {styles.title}> 
             <h1>Weather App</h1>
+            </div>
             <WeatherCard 
                 cityName={weatherData.name}
 
