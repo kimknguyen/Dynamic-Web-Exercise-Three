@@ -14,13 +14,14 @@ const WeatherCard = ({
 
 }) => (
 
+
     <div 
         className = {styles.WeatherCardWrapper}
-        style={ { backgroundColor: `rgba(0,0,0,0.${cloudiness})`}}
+        style={ { backgroundColor: `rgba(30,81,123,0.${cloudiness})`}}
         
         >
+    
         <div className= {styles.WeatherCardImage}
-        //style={ { opacity: `rgba(1,0,0,0.${cloudiness})`}}
         > 
         <WeatherIcon weatherType={weatherType} />
         </div>
@@ -30,8 +31,13 @@ const WeatherCard = ({
         <p>Current Temperature: {currentTemperature}&#176; </p>
         <p>High Temperature: {highTemperature}&#176;</p>
         <p>Low Temperature: {lowTemperature}&#176;</p>
+       
         <p>Cloudiness: {cloudiness}% </p>
-        <p>Humidity: {humidity}% </p>
+        <div
+        style={ { backgroundColor: `rgba(192,57,43,1.${humidity})`}} >
+            <p>Humidity: {humidity}% </p>
+        </div>
+        
         <p>Wind Speed: {windSpeed} mph</p>
 
     </div>

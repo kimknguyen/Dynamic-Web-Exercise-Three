@@ -13,6 +13,7 @@ import {
 //2. see what type of weather values exists 
 
 const WeatherIcon = ({ weatherType }) => {
+    
     switch (weatherType) {
         case "Clouds": 
             return <FontAwesomeIcon icon={faCloud} />; 
@@ -27,10 +28,12 @@ const WeatherIcon = ({ weatherType }) => {
         default: 
             return <FontAwesomeIcon icon={faCloud} />; 
             //return <div>this works</div>; 
-    }
-
+    } 
 
  
-}; 
+}
+
+
+
 
 export default WeatherIcon; 
